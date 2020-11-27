@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'Helloworld';
   imgUrl ="../assets/CG_logo.png";
   url = "https://www.capgemini.com";
-  /*userName: string = "";
-  nameError: string = "";*/
+  userName: string = "";
+  nameError: string = "";
   
   ngOnInit(): void{
     this.title = "Hello from Capgemini.";
