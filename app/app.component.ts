@@ -15,7 +15,7 @@ export class AppComponent {
   nameError: string = "";*/
   
   ngOnInit(): void{
-    //this.title = "Hello from Capgemini.";
+    this.title = "Hello from Capgemini.";
   }
 
   /*onClick($event){
