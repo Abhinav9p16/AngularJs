@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Helloworld';
-  /*imgUrl ="../assets/CG_logo.png";
-  url = "https://www.capgemini.com";
+  imgUrl ="../assets/CG_logo.png";
+  /*url = "https://www.capgemini.com";
   userName: string = "";
   nameError: string = "";*/
   
