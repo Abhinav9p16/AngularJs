@@ -10,20 +10,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Helloworld';
   imgUrl ="../assets/CG_logo.png";
-  /*url = "https://www.capgemini.com";
-  userName: string = "";
+  url = "https://www.capgemini.com";
+  /*userName: string = "";
   nameError: string = "";*/
   
   ngOnInit(): void{
     this.title = "Hello from Capgemini.";
   }
 
-  /*onClick($event){
+  onClick($event){
     console.log("Savebutton is clicked!", $event);
     window.open(this.url, "_blank");
   }
 
-  onInput($event){
+  /*onInput($event){
     console.log("Change Event Occured!",$event.data);
     const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
     if(nameRegex.test(this.userName)){
