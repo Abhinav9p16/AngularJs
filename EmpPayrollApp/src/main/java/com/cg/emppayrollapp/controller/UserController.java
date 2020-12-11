@@ -1,6 +1,7 @@
 package com.cg.emppayrollapp.controller;
 
 import com.cg.emppayrollapp.dto.EmployeePayrollDto;
+import com.cg.emppayrollapp.exceptions.PayrollException;
 import com.cg.emppayrollapp.exceptions.UserNotFound;
 import com.cg.emppayrollapp.service.EmployeePayrollService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class UserController {
         try{
             return ResponseEntity.status(HttpStatus.OK).body(employeePayrollService.UpdateUser(user));
         } catch (UserNotFound e){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            throw new PayrollException(PayrollException.ExceptionTypes.EMPLOYEE_NOT_FOUND);
         }
     }
 
@@ -56,4 +57,3 @@ public class UserController {
         }
     }
 }
-
